@@ -9,10 +9,10 @@ Docker
 ## How to build the AWS Lambda layers?
 
 Clone the repo, make sure you are in its directory, then run the build script with an optional command line argument that specifies the version of the Python runtime you want to use on AWS Lambda. For example:
-...
-./build.sh 3.7
-...
-If you omit the version number, the build script defaults to Python 3.8. The zipped AWS Lambda layer (e.g. "numpy_scipy_umfpack_python3.7.zip") will appear in the project directory once the build script is finished. The docker container will be removed after use, but not the docker image.
+```
+$ ./build.sh 3.7
+```
+If you omit the version number, the build script defaults to Python 3.8. The zipped layer (e.g. "numpy_scipy_umfpack_python3.7.zip") will appear in the project directory once the build script is finished. The docker container will be removed after use, but not the docker image.
 
 ## Remarks
 
